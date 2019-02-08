@@ -1,0 +1,394 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    /*position: relative;*/
+    width:100%;
+    /*height: auto !important;*/
+    /*height:140vh;*/
+    height:auto;
+
+    background-color:#fff;
+}
+
+.menu{
+    position:relative;
+    z-index:20; /*Planのとこに被っちゃうから被んないようにしたいね*/
+    /*background-color:#aaa;*/
+    height:100%;
+
+    width:100%;
+    /*opacity:0.6;*/
+}
+
+.header{
+    top:0;
+    z-index:15;
+    background-color:#004;
+    width:100%;
+    height:8vw;
+}
+
+.header img{
+    opacity:0.4;
+    width:20vw;
+    height:8vw;
+}
+
+.header-logo{
+    position:absolute;
+    left:0;
+
+}
+
+.header a{
+    text-decoration: none;
+    color:#fff;
+    width:100%;
+}
+
+.accbox{
+    z-index:30;
+    position:absolute;
+    top:0;
+    right:0;
+    display: flex;
+    padding:0;
+    height:8vw;
+    margin:0 auto;
+}
+
+.accbox li{
+    position: relative;
+    list-style:none;
+    width:20vw;
+    color:#fff;
+    height:8vw;
+    text-align: center;
+    line-height: 8vw;
+    /*padding:0 8px;*/
+    margin:0;
+    transition:0.5s;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.6vw;
+}
+
+.accbox li a{
+    display: block;
+}
+
+.accbox li:hover{
+    background: #5280dd;
+}
+
+.oowaku {
+    position:absolute;
+    left:0;
+    top:8vw;
+    margin:0;
+    padding:0;
+
+
+}
+
+.oowaku li{
+    overflow: hidden;
+    height:0;
+    text-align: center;
+    line-height: 8vw;
+    /*padding:8px;*/
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.6vw;
+    background: #33a;
+}
+
+.accbox li:hover .oowaku li{
+    overflow:visible;
+    margin:0;
+    padding:0;
+    transition:1.0s;
+    height:8vw;
+    border-top:solid 1px #fff;
+}
+
+
+.activity{
+    height:60vw;
+    max-height:100%;
+    width:100%;
+    position:relative;
+    padding:0;
+    margin:0;
+    word-wrap:break-word ;
+}
+
+.activity p{
+    margin-left:5px;
+    /*margin-right:90%;*/
+    word-wrap:break-word;
+}
+
+
+
+/*@media screen and (min-width: 1000px) {*/
+    .topic{
+        position:absolute;
+        top:50%;
+        transform:translateY(-15%);
+        left:0;
+        right:0;
+        font-size:2em;
+        vertical-align: middle;
+        text-align: center;
+        color:#fff;
+        word-wrap:break-word;
+    }
+
+/*}*/
+
+
+
+    .image1 {
+        width:100%;
+        height: 60vw;
+
+        background-color:#000;
+        border:solid 3px #000;
+        padding:0;
+        margin:0;
+    }
+
+    .image1  img {
+        margin:0;
+        padding:0;
+        max-width: 100%;
+        max-height:100% ;
+        opacity:0.5;
+        /*vartical-align:bottom;*/
+    }
+
+    .image1 div.image:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    .news{
+        width: 100%;
+        height:auto;
+    }
+
+    #titleofnews{
+        overflow: hidden;
+        display:block;
+        /*margin-left:5vw;*/
+        padding-left:3vw;
+        border-bottom: solid 2px #33aa33;
+        text-align:left;
+        font-family: "Yu Gothic UI";
+        font-size:2em;
+
+
+    }
+
+
+    #about_us{
+        background-color:#eeeeee;
+        margin-top:10vh;
+        width:100%;
+        overflow: hidden;
+        z-index:1;
+        border-top:solid 2px #3a3;
+    }
+
+    .bg-mask2{
+        background-image: url("aboutus2.jpg");
+        width:100%;
+        height:50vw;
+        margin:0;
+        padding:0;
+        background-size: cover;
+    }
+
+#vision{
+    background-color:#eeeeee;
+    margin-top:10vh;
+    width:100%;
+    overflow: hidden;
+    z-index:1;
+    border-top:solid 2px #3a3;
+}
+    
+    .bg-mask{
+        background-image: url("visiono.jpg");
+        background-size: cover;
+        width:100%;
+        height:50vw;
+        margin:0;
+        padding:0;
+        background-size: cover;
+    }
+
+    .touka{
+        height:100%;
+        width:100%;
+        background:rgba(0,0,0,0.5);
+    }
+
+    .touka p{
+        text-align:center;
+        vertical-align: center;
+        line-height:50vw;
+        height:100%;
+        width:100%;
+        color:#fff;
+        font-family: "Yu Gothic UI Light";
+        font-size:3em;
+    }
+
+    .words{
+        text-align:center;
+        font-family:"Yu Gothic UI";
+        font-size:1rem;
+        line-height:3em;
+    }
+
+#Contents{
+    background-color:#eeeeee;
+    margin-top:10vh;
+    width:100%;
+    overflow: hidden;
+    z-index:1;
+    border-top:solid 2px #3a3;
+}
+
+#content{
+    font-size:2.5vw;
+    line-height:2em;
+    font-family: "Yu Gothic UI";
+    padding-left:5vw;
+}
+
+.bg-mask3{
+    background-image: url("contents.jpg");
+    background-size: cover;
+    width:100%;
+    height:50vw;
+    margin:0;
+    padding:0;
+}
+
+.planstyle{
+    width:84vw;
+    height:40vh;
+    margin:0 auto;
+    list-style-type: none;
+
+}
+
+.planstyle li{
+    width:38vw;
+    height:30vw;
+    line-height:30vw;
+    float:left;
+    text-align:center;
+    font-size:2em;
+    color:#fff;
+    font-family: "Arial";
+    opacity:0.8;
+}
+
+#plansm{
+    position:relative;
+    z-index:10;
+    margin-right:8vw;
+    background-image:url("plansm.jpg");
+    background-size:cover;
+}
+
+.hoverplan{
+    position:absolute;
+    width:100%;
+    top:0;
+    overflow:hidden;
+    bottom:0;
+    line-height:2em;
+    font-size:0.6em;
+    height:100%;
+    margin:0;
+
+    background:rgba(0,0,0,0.6);
+}
+
+.hoverplan a{
+    display:block;
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+#stylesm{
+    position:relative;
+    background-size: cover;
+    background-image:url("stylesm.jpg");
+}
+
+
+.footer{/*一番下にもっていく生き方がわからない*/
+    background: #004;
+   position:relative;
+    width:100%;
+    height:20vh;
+    padding:0;
+    margin-top:20vh;
+    overflow:hidden;
+    }
+
+.footer ul{
+    width:100%;
+    list-style:none;
+    padding:0;
+    margin:0;
+    position:absolute;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration:none;
+}
+
+.footer li{
+    width:33%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    padding:0;
+    font-size:2vh;
+    line-height:10vh;
+}
+
+.sns{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    list-style-type: none;
+}
+.sns li{
+    float:left;
+    width:50%;
+
+}
