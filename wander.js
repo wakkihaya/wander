@@ -28,6 +28,12 @@ $(document).ready(function () {
 
     });
 
+    $("#close").click(function () {
+        $(".motwin").fadeOut("slow", function () {
+            $(this).remove();
+        });
+    });
+
     $(window).scroll(function () {
         if($(this).scrollTop()<100){
             $('.head').css('background-color','transparent');
