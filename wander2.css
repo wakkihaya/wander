@@ -212,7 +212,7 @@ html,body {
     }
 
     .bg-mask2{
-        background-image: url("aboutus2.jpg");
+        background-image: url("image/aboutus2.jpg");
         width:100%;
         height:50vw;
         margin:0;
@@ -230,7 +230,7 @@ html,body {
 }
     
     .bg-mask{
-        background-image: url("visiono.jpg");
+        background-image: url("image/visiono.jpg");
         background-size: cover;
         width:100%;
         height:50vw;
@@ -280,7 +280,7 @@ html,body {
 }
 
 .bg-mask3{
-    background-image: url("contents.jpg");
+    background-image: url("image/contents.jpg");
     background-size: cover;
     width:100%;
     height:50vw;
@@ -312,7 +312,7 @@ html,body {
     position:relative;
     z-index:10;
     margin-right:8vw;
-    background-image:url("plansm.jpg");
+    background-image:url("image/plansm.jpg");
     background-size:cover;
 }
 
@@ -343,7 +343,7 @@ html,body {
 #stylesm{
     position:relative;
     background-size: cover;
-    background-image:url("stylesm.jpg");
+    background-image:url("image/stylesm.jpg");
 }
 
 
